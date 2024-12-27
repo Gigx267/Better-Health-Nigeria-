@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Better Health </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="As healthcare challenges persist in both rural and urban areas,
+         many people struggle to access timely and convenient medical services. In urban settings, 
+         high population density and busy lifestyles often lead people to neglect their health, delaying 
+         medical consultations and preventive care. This project proposes the development of a web-based hospital 
+         platform aimed at improving healthcare accessibility and convenience for people regardless of location. By 
+         offering virtual consultations, health monitoring, appointment scheduling, and secure health data management,
+          the platform enables users to manage their health efficiently from any device with internet access. 
+          The platform's design addresses the unique needs of both urban and rural users, reducing the need for 
+          physical visits, travel, and time away from work or family. Incorporating user feedback mechanisms, 
+          such as in-app surveys, real-time chat support, and data analytics, the platform will evolve continuously
+           to meet user needs, providing a seamless, patient-centered experience. Ultimately, this project aims to 
+           enhance patient engagement, improve health outcomes, and promote preventive care, making healthcare more 
+           accessible
+         and adaptable to the modern demands of busy lifestyles and underserved communities alike. ">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><i class="fas fa-hand-holding-drug me-3"></i>Better Health Ng </h1>
+                  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                       
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                     
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                           
+                        </div>
+                    </div>
+
+                    <a href="Aidoctor.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4"> AI Wellness Advisor </a>
+                </div>
+            </nav>
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Blog  </h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active text-primary">Blog  </li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+ <!-- Blog Start -->
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Nigerian Health Blog</h4>
+            <h1 class="display-3 text-capitalize mb-3">Latest Trends in Healthcare</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">The Rise of Telemedicine in Nigeria</a>
+                        <p>Telemedicine is rapidly gaining popularity in Nigeria as it bridges the gap between healthcare providers and patients, particularly in remote areas. This innovative approach allows patients to consult with doctors via video calls, reducing the need for physical visits to healthcare facilities. The COVID-19 pandemic has further accelerated the adoption of telemedicine as people seek safer and more convenient ways to access healthcare services.</p>
+                        <p>Several telemedicine platforms have emerged in Nigeria, offering services such as online consultations, prescription refills, and mental health support. These platforms not only improve access to healthcare but also help in managing chronic conditions by providing regular follow-ups and monitoring. The Nigerian government and private sector are working together to enhance the infrastructure and regulatory framework to support the growth of telemedicine, making it a sustainable and integral part of the healthcare system.</p>
+                        <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Innovations in Nigerian Healthcare</a>
+                        <p>Innovation is at the heart of transforming healthcare in Nigeria. From advanced diagnostic tools to mobile health applications, the Nigerian healthcare sector is witnessing a wave of technological advancements aimed at improving patient outcomes and operational efficiency. One notable innovation is the use of artificial intelligence (AI) in diagnostics. AI-powered tools are being developed to assist doctors in diagnosing diseases with greater accuracy and speed, particularly in radiology and pathology.</p>
+                        <p>Mobile health applications are also playing a significant role in enhancing healthcare delivery. These apps provide various services, including health education, symptom checkers, appointment scheduling, and medication reminders. They empower patients to take control of their health and make informed decisions. Additionally, innovations in medical devices, such as portable ultrasound machines and wearable health monitors, are expanding the reach of healthcare services to underserved communities.</p>
+                        <p>The Nigerian healthcare ecosystem is also benefiting from collaborations with global health organizations and tech companies, which bring in expertise, funding, and technology to drive innovation. These partnerships are crucial in addressing the unique healthcare challenges faced by the country and ensuring that the benefits of innovation are accessible to all Nigerians.</p>
+                        <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Public Health Initiatives in Nigeria</a>
+                        <p>Public health initiatives are essential in improving the overall health and well-being of Nigerians. The Nigerian government, in collaboration with international organizations, has launched several public health programs aimed at addressing critical health issues such as maternal and child health, infectious diseases, and non-communicable diseases. One of the key initiatives is the National Immunization Program, which aims to ensure that all children receive essential vaccines to prevent diseases such as polio, measles, and tuberculosis.</p>
+                        <p>Another significant public health initiative is the campaign against malaria. Nigeria bears a high burden of malaria, and efforts are being made to distribute insecticide-treated nets, provide access to antimalarial medications, and promote community awareness about malaria prevention. Additionally, there are ongoing efforts to tackle the rise of non-communicable diseases such as hypertension, diabetes, and cancer through health education, screening programs, and the promotion of healthy lifestyles.</p>
+                        <p>Public health initiatives also focus on improving healthcare infrastructure and access to essential services in rural and underserved areas. Mobile health clinics, community health workers, and telehealth services are being deployed to ensure that even the most remote communities have access to quality healthcare. These initiatives are vital in reducing health disparities and achieving universal health coverage in Nigeria.</p>
+                        <a href="#" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Blog Start -->
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+          
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Government Launches National Health Insurance Scheme</a>
+                        <p>The Nigerian government has recently launched a comprehensive National Health Insurance Scheme (NHIS) aimed at providing affordable healthcare to all citizens. This initiative is part of the government's effort to achieve Universal Health Coverage (UHC) by ensuring that every Nigerian has access to necessary health services without financial hardship.</p>
+                        <p>The NHIS will cover a wide range of services, including preventive care, treatment for chronic diseases, and emergency services. The scheme is expected to improve health outcomes, reduce out-of-pocket expenses for healthcare, and enhance the overall quality of care. The government is working with various stakeholders, including private healthcare providers and international organizations, to ensure the successful implementation of the NHIS across the country.</p>
+                        <a href="https://www.nigeria-health-insurance" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Boost in Funding for Primary Healthcare Centers</a>
+                        <p>In a bid to strengthen the primary healthcare system, the Nigerian government has announced a significant increase in funding for Primary Healthcare Centers (PHCs) across the country. This move is aimed at improving access to essential health services, particularly in rural and underserved areas.</p>
+                        <p>The additional funding will be used to upgrade infrastructure, procure medical equipment, and ensure the availability of essential medicines at PHCs. The government is also focusing on training and capacity building for healthcare workers to enhance the quality of care provided at these centers. This initiative is expected to reduce the burden on secondary and tertiary healthcare facilities by providing effective primary care at the community level.</p>
+                        <a href="https://www.nigeria-primary-healthcare-funding" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">New Policies to Combat Non-Communicable Diseases</a>
+                        <p>The Nigerian government has introduced new policies and strategies to address the rising incidence of non-communicable diseases (NCDs) such as diabetes, hypertension, and cancer. These policies focus on prevention, early detection, and effective management of NCDs to reduce morbidity and mortality rates.</p>
+                        <p>One of the key components of this initiative is the nationwide screening programs for early detection of NCDs. The government is also promoting healthy lifestyles through public awareness campaigns, encouraging regular physical activity, and advocating for a balanced diet. Additionally, there are efforts to strengthen the healthcare system's capacity to manage NCDs by providing training for healthcare professionals and ensuring the availability of necessary medications and diagnostic tools.</p>
+                        <a href="https://www.nigeria-ncd-policies" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+        <!-- Blog Start -->
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Nigerian Health Blog</h4>
+            <h1 class="display-3 text-capitalize mb-3">Healthcare Trends to Watch in 2025</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-trend-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Expansion of Telemedicine Services</a>
+                        <p>As Nigeria continues to embrace digital health solutions, the expansion of telemedicine services is expected to be a major trend in 2025. Telemedicine has proven to be a vital tool in bridging the gap between healthcare providers and patients, especially in remote and underserved areas.</p>
+                        <p>With advancements in technology and increased internet penetration, more Nigerians will have access to telemedicine platforms, enabling them to consult with healthcare professionals without the need for physical visits. This trend will not only improve access to healthcare but also help in managing chronic conditions and reducing the burden on healthcare facilities.</p>
+                        <a href="https://www.nigeria-telemedicine-expansion" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-trend-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Increased Focus on Mental Health</a>
+                        <p>Mental health awareness and services are gaining greater attention in Nigeria's healthcare agenda. In 2025, there will be a concerted effort to integrate mental health care into the primary healthcare system, making it more accessible to the general population.</p>
+                        <p>The government, along with non-governmental organizations, is expected to launch various initiatives aimed at reducing the stigma associated with mental health issues. These initiatives will include public awareness campaigns, training for healthcare providers, and the establishment of mental health support centers across the country.</p>
+                        <a href="https://www.nigeria-mental-health-2025" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-trend-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="#" class="h4 d-inline-block mb-3">Adoption of AI and Big Data in Healthcare</a>
+                        <p>The adoption of artificial intelligence (AI) and big data analytics is set to transform the healthcare landscape in Nigeria in 2025. These technologies will play a crucial role in improving diagnostic accuracy, personalizing treatment plans, and optimizing healthcare management.</p>
+                        <p>AI-powered tools will assist healthcare professionals in diagnosing diseases more accurately and swiftly, while big data analytics will provide insights into population health trends, enabling better decision-making and resource allocation. The integration of these technologies will enhance the efficiency and effectiveness of the healthcare system, ultimately leading to better health outcomes for Nigerians.</p>
+                        <a href="https://www.nigeria-ai-bigdata-healthcare" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+ <!-- Blog Start -->
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Nigerian Health Blog</h4>
+            <h1 class="display-3 text-capitalize mb-3">How to Stay Healthy in Nigeria</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-telemedicine-expansion" class="h4 d-inline-block mb-3">The Rise of Telemedicine in Nigeria</a>
+                        <p>Telemedicine is rapidly gaining popularity in Nigeria as it bridges the gap between healthcare providers and patients, particularly in remote areas. This innovative approach allows patients to consult with doctors via video calls, reducing the need for physical visits to healthcare facilities.</p>
+                        <a href="https://www.nigeria-telemedicine-expansion" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-health-innovation" class="h4 d-inline-block mb-3">Innovations in Nigerian Healthcare</a>
+                        <p>Innovation is at the heart of transforming healthcare in Nigeria. From advanced diagnostic tools to mobile health applications, the Nigerian healthcare sector is witnessing a wave of technological advancements aimed at improving patient outcomes and operational efficiency.</p>
+                        <a href="https://www.nigeria-health-innovation" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-public-health-initiatives" class="h4 d-inline-block mb-3">Public Health Initiatives in Nigeria</a>
+                        <p>Public health initiatives are essential in improving the overall health and well-being of Nigerians. The government, in collaboration with international organizations, has launched several programs aimed at addressing critical health issues such as maternal and child health, infectious diseases, and non-communicable diseases.</p>
+                        <a href="https://www.nigeria-public-health-initiatives" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Blog Start -->
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Nigerian Health Blog</h4>
+            <h1 class="display-3 text-capitalize mb-3">Government Initiatives for Better Healthcare</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-health-insurance" class="h4 d-inline-block mb-3">Government Launches National Health Insurance Scheme</a>
+                        <p>The Nigerian government has recently launched a comprehensive National Health Insurance Scheme (NHIS) aimed at providing affordable healthcare to all citizens. This initiative is part of the government's effort to achieve Universal Health Coverage (UHC) by ensuring that every Nigerian has access to necessary health services without financial hardship.</p>
+                        <a href="https://www.nigeria-health-insurance" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-primary-healthcare-funding" class="h4 d-inline-block mb-3">Boost in Funding for Primary Healthcare Centers</a>
+                        <p>In a bid to strengthen the primary healthcare system, the Nigerian government has announced a significant increase in funding for Primary Healthcare Centers (PHCs) across the country. This move is aimed at improving access to essential health services, particularly in rural and underserved areas.</p>
+                        <a href="https://www.nigeria-primary-healthcare-funding" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-blog-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-ncd-policies" class="h4 d-inline-block mb-3">New Policies to Combat Non-Communicable Diseases</a>
+                        <p>The Nigerian government has introduced new policies and strategies to address the rising incidence of non-communicable diseases (NCDs) such as diabetes, hypertension, and cancer. These policies focus on prevention, early detection, and effective management of NCDs to reduce morbidity and mortality rates.</p>
+                        <a href="https://www.nigeria-ncd-policies" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
+<!-- Blog Start -->
+<div class="container-fluid blog pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Nigerian Health Blog</h4>
+            <h1 class="display-3 text-capitalize mb-3">Healthcare Trends to Watch in 2025</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-trend-1.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-telemedicine-expansion" class="h4 d-inline-block mb-3">Expansion of Telemedicine Services</a>
+                        <p>As Nigeria continues to embrace digital health solutions, the expansion of telemedicine services is expected to be a major trend in 2025. Telemedicine has proven to be a vital tool in bridging the gap between healthcare providers and patients, especially in remote and underserved areas.</p>
+                        <a href="https://www.nigeria-telemedicine-expansion" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-trend-2.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-mental-health-2025" class="h4 d-inline-block mb-3">Increased Focus on Mental Health</a>
+                        <p>Mental health awareness and services are gaining greater attention in Nigeria's healthcare agenda. In 2025, there will be a concerted effort to integrate mental health care into the primary healthcare system, making it more accessible to the general population.</p>
+                        <a href="https://www.nigeria-mental-health-2025" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="img/health-trend-3.jpg" class="img-fluid rounded-top w-100" alt="">
+                        <div class="blog-date px-4 py-2"><i class="fa fa-calendar-alt me-1"></i> Dec 27 2024</div>
+                    </div>
+                    <div class="blog-content rounded-bottom p-4">
+                        <a href="https://www.nigeria-ai-bigdata-healthcare" class="h4 d-inline-block mb-3">Adoption of AI and Big Data in Healthcare</a>
+                        <p>The adoption of artificial intelligence (AI) and big data analytics is set to transform the healthcare landscape in Nigeria in 2025. These technologies will play a crucial role in improving diagnostic accuracy, personalizing treatment plans, and optimizing healthcare management.</p>
+                        <a href="https://www.nigeria-ai-bigdata-healthcare" class="fw-bold text-secondary">Read More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+<!-- Service Start -->
+<div class="container-fluid service bg-light overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Our Service</h4>
+            <h1 class="display-3 text-capitalize mb-3"> Stay Healthy With   Better Health Nigeria </h1>
+        </div>
+        <div class="row gx-0 gy-4 align-items-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="service-content text-end">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Diagnostic Tools</a>
+                                    <p class="mb-0"> Symptom checkers and AI-powered assessments for preliminary health assessments.
+                                        Access to a library of health information and articles  </p>
+                                </div>
+                                <div class="ps-4">
+                                    <div class="service-btn"><i class="fas fa-microscope  text-white fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="service-content text-end">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Mental Health Support </a>
+                                    <p class="mb-0">Online therapy sessions with licensed therapists.
+                                        Access to mental health resources and support groups  </p>
+                                </div>
+                                <div class="ps-4">
+                                    <div class="service-btn"><i class="fas fa-users text-white fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="service-content text-end">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Appointment Scheduling</a>
+                                    <p class="mb-0">Easily book appointments with doctors and specialists within the platform.
+                                        Receive appointment reminders and notifications.   </p>
+                                </div>
+                                <div class="ps-4">
+                                    <div class="service-btn"><i class="fas fa-project-diagram text-white fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="bg-transparent">
+                    <img src="PE.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="pe-4">
+                                    <div class="service-btn"><i class="fas fa-phone text-white fa-2x"></i></div>
+                                </div>
+                                <div class="service-content">
+                                    <a href="#" class="h4 d-inline-block mb-3">  Remote Prescription Delivery</a>
+                                    <p class="mb-0">Partner with pharmacies for convenient delivery of medications to patients' homes.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="pe-4">
+                                    <div class="service-btn"><i class="fas fa-bars text-white fa-2x"></i></div>
+                                </div>
+                                <div class="service-content">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Telemedicine Consultations  </a>
+                                    <p class="mb-0"> Video/audio/chat consultations with doctors across various specialties.
+                                        Receive diagnoses, treatment plans, and prescriptions. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="pe-4">
+                                    <div class="service-btn"><i class="fas fa-angle-right text-white fa-2x"></i></div>
+                                </div>
+                                <div class="service-content">
+                                    <a href="#" class="h4 d-inline-block mb-3">Health Education & Wellness Programs  </a>
+                                    <p class="mb-0"> Online courses and workshops on topics like nutrition, exercise, stress management, and disease prevention.
+                                        Access to personalized wellness plans.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+        
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                            <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h3 class="text-white mb-4"><i class="fas fa-hand-diagram  text-primary me-3"></i>Better Health Nigeria </h3>
+                                <p class="mb-3">  We believe that technology can revolutionize healthcare delivery in Nigeria. Through our innovative platform, we are building a healthier future for all, one patient at a time.</p>
+                            </div>
+                            <div class="position-relative">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                          
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Business Hours</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 09.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 09.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 09.00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Abuja Nigeria </a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> Betterng@.com</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> www..betterng.com</a>
+                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +2349076933894</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>  BetterHealthNG</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
