@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Better Health </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="As healthcare challenges persist in both rural and urban areas,
+         many people struggle to access timely and convenient medical services. In urban settings, 
+         high population density and busy lifestyles often lead people to neglect their health, delaying 
+         medical consultations and preventive care. This project proposes the development of a web-based hospital 
+         platform aimed at improving healthcare accessibility and convenience for people regardless of location. By 
+         offering virtual consultations, health monitoring, appointment scheduling, and secure health data management,
+          the platform enables users to manage their health efficiently from any device with internet access. 
+          The platform's design addresses the unique needs of both urban and rural users, reducing the need for 
+          physical visits, travel, and time away from work or family. Incorporating user feedback mechanisms, 
+          such as in-app surveys, real-time chat support, and data analytics, the platform will evolve continuously
+           to meet user needs, providing a seamless, patient-centered experience. Ultimately, this project aims to 
+           enhance patient engagement, improve health outcomes, and promote preventive care, making healthcare more 
+           accessible
+         and adaptable to the modern demands of busy lifestyles and underserved communities alike. ">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><i class="fas fa-hand-holding-drug me-3"></i>Better Health Ng </h1>
+                  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                       
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                     
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                           
+                        </div>
+                    </div>
+
+                    <a href="Aidoctor.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4"> AI Wellness Advisor </a>
+                </div>
+            </nav>
+
+            <!-- Carousel Start -->
+            <div class="carousel-header">
+                <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="P (1).jpg" class="img-fluid w-100" alt="Image">
+                            <div class="carousel-caption-1">
+                                <div class="carousel-caption-1-content" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;"> Healthcare Made Accessible </h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;"> high-quality healthcare from anywhere in Nigeria  </h1>
+                                    <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;"> To make quality healthcare accessible and affordable for all Nigerians,
+                                         regardless of location or socioeconomic status,empowering individuals to take charge of their health
+                                    </p>
+                                    <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
+                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#"> Digital Doctor </a>
+                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#"> Book Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="P (1).jpg" class="img-fluid w-100" alt="Image">
+                            <div class="carousel-caption-2">
+                                <div class="carousel-caption-2-content" style="max-width: 900px;">
+                                    <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;"> Follow-up care remotely </h4>
+                                    <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;"> Consult with doctors via video, audio, or chat.</h1>
+                                    <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;"> Potentially reduce healthcare costs by minimizing travel and wait times, overcome geographical barriers and access care in remote areas
+                                    </p>
+                                    <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
+                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Digital Doctor </a>
+                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#"> Book Appointment</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn btn-primary fadeInLeft animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"> <i class="fa fa-angle-left fa-3x"></i></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn btn-primary fadeInRight animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fa fa-angle-right fa-3x"></i></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+ <!-- About Start -->
+ <div class="container-fluid about overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-img rounded h-100">
+                    <img src="b (2).jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="">
+                    <div class="about-exp"><span> Years of Experiance</span></div>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="about-item">
+                    <h4 class="text-primary text-uppercase">About Us</h4>
+                    <h1 class="display-3 mb-3">We Deliver The Quality Healthcare .</h1>
+                    <p class="mb-4">At Better Health Nigeria, we believe that everyone deserves access to quality healthcare.
+                         We are a digital health platform dedicated to connecting Nigerians with top-tier medical professionals,
+                          regardless of their location. Our mission is to empower individuals to take charge of their health by providing convenient,
+                         accessible, and affordable healthcare services
+                    </p>
+                    <div class="bg-light rounded p-4 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div class="pe-4">
+                                        <div class="" style="width: 80px; height: 80px;"><i class=""></i></div>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="h4 d-inline-block mb-3"> Telemedicine Consultations </a>
+                                        <p class="mb-0"> Consult with qualified doctors online via video, audio, or chat."Experience convenient and high-quality healthcare from anywhere in Nigeria </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded p-4 mb-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="d-flex">
+                                    <div class="pe-4">
+                                        <div class="" style="width: 80px; height: 80px;"><i class="fas fa-driver text-white fa-2x"></i></div>
+                                    </div>
+                                    <div class="">
+                                        <a href="#" class="h4 d-inline-block mb-3"> Remote Prescriptions and Follow-up Care </a>
+                                        <p class="mb-0"> Receive ongoing care and support from your doctor remotely, including 
+                                            follow-up appointments and medication adjustments.
+                                            Our pharmacy partners will verify your prescription and prepare your medications. 
+                                            Once your medications are ready, 
+                                            we'll dispatch a rider to deliver them directly to your doorstep</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-secondary rounded-pill py-3 px-5">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Service Start -->
+<div class="container-fluid service bg-light overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Our Service</h4>
+            <h1 class="display-3 text-capitalize mb-3"> Stay Healthy With   Better Health Nigeria </h1>
+        </div>
+        <div class="row gx-0 gy-4 align-items-center">
+            <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="service-content text-end">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Diagnostic Tools</a>
+                                    <p class="mb-0"> Symptom checkers and AI-powered assessments for preliminary health assessments.
+                                        Access to a library of health information and articles  </p>
+                                </div>
+                                <div class="ps-4">
+                                    <div class="service-btn"><i class="fas fa-microscope  text-white fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="service-content text-end">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Mental Health Support </a>
+                                    <p class="mb-0">Online therapy sessions with licensed therapists.
+                                        Access to mental health resources and support groups  </p>
+                                </div>
+                                <div class="ps-4">
+                                    <div class="service-btn"><i class="fas fa-users text-white fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="service-content text-end">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Appointment Scheduling</a>
+                                    <p class="mb-0">Easily book appointments with doctors and specialists within the platform.
+                                        Receive appointment reminders and notifications.   </p>
+                                </div>
+                                <div class="ps-4">
+                                    <div class="service-btn"><i class="fas fa-project-diagram text-white fa-2x"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="bg-transparent">
+                    <img src="PE.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="pe-4">
+                                    <div class="service-btn"><i class="fas fa-phone text-white fa-2x"></i></div>
+                                </div>
+                                <div class="service-content">
+                                    <a href="#" class="h4 d-inline-block mb-3">  Remote Prescription Delivery</a>
+                                    <p class="mb-0">Partner with pharmacies for convenient delivery of medications to patients' homes.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="pe-4">
+                                    <div class="service-btn"><i class="fas fa-bars text-white fa-2x"></i></div>
+                                </div>
+                                <div class="service-content">
+                                    <a href="#" class="h4 d-inline-block mb-3"> Telemedicine Consultations  </a>
+                                    <p class="mb-0"> Video/audio/chat consultations with doctors across various specialties.
+                                        Receive diagnoses, treatment plans, and prescriptions. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item rounded p-4 mb-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="pe-4">
+                                    <div class="service-btn"><i class="fas fa-angle-right text-white fa-2x"></i></div>
+                                </div>
+                                <div class="service-content">
+                                    <a href="#" class="h4 d-inline-block mb-3">Health Education & Wellness Programs  </a>
+                                    <p class="mb-0"> Online courses and workshops on topics like nutrition, exercise, stress management, and disease prevention.
+                                        Access to personalized wellness plans.  </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+
+
+        <!-- AI Symptom Checkers Start -->
+    <div class="container-fluid bg-light overflow-hidden py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                <h4 class="text-uppercase text-primary">AI Symptom Checkers</h4>
+                <h1 class="display-3 text-capitalize mb-3"> Get a Diagnosis Without Seeing a Doctor </h1>
+            </div>
+            <div class="row gx-0 gy-4">
+                <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="service-item rounded p-4 mb-4">
+                        <div class="d-flex">
+                            <div class="service-content text-end">
+                                <a href="https://www.babylonhealth.com/" target="_blank" class="h4 d-inline-block mb-3">Babylon Health</a>
+                                <p class="mb-0">Use Babylon Health's AI to check symptoms and get health advice.</p>
+                            </div>
+                            <div class="ps-4">
+                                <div class="service-btn"><i class="fas fa-robot text-white fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item rounded p-4 mb-4">
+                        <div class="d-flex">
+                            <div class="service-content text-end">
+                                <a href="https://ada.com/" target="_blank" class="h4 d-inline-block mb-3">Ada Health</a>
+                                <p class="mb-0">Ada Health provides an AI-powered symptom checker to help you understand your symptoms.</p>
+                            </div>
+                            <div class="ps-4">
+                                <div class="service-btn"><i class="fas fa-stethoscope text-white fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow fadeInRight" data-wow-delay="0.2s">
+                    <div class="service-item rounded p-4 mb-4">
+                        <div class="d-flex">
+                            <div class="service-content text-end">
+                                <a href="https://symptomate.com/" target="_blank" class="h4 d-inline-block mb-3">Symptomate</a>
+                                <p class="mb-0">Symptomate helps you check your symptoms and find out what might be wrong.</p>
+                            </div>
+                            <div class="ps-4">
+                                <div class="service-btn"><i class="fas fa-heartbeat text-white fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- AI Symptom Checkers End -->
+<!-- Include EmailJS SDK -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function() {
+        emailjs.init('YOUR_USER_ID'); // Replace 'YOUR_USER_ID' with your actual user ID from EmailJS
+    })();
+</script>
+
+<!-- AI Symptom Checkers Start -->
+<div class="container-fluid bg-light overflow-hidden py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Order Hard-to-Find Medicines</h4>
+            <h1 class="display-3 text-capitalize mb-3">Place Your Order for Hard-to-Find Drugs</h1>
+            <p class="lead">Select the medicine you need and place an order. Our team will review and respond to your request.</p>
+        </div>
+        <div class="row gx-0 gy-4">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.3s">
+                <div >
+                    <form id="form">
+                        <div class="field">
+                          <label for="to_name">Name </label>
+                          <input type="text" name="to_name" id="to_name">
+                        </div>
+                        <div class="field">
+                            <label for="medicine">Select Medicine</label>
+                            <select name="medicine" id="medicine">
+                              <option selected disabled value="">Choose...</option>
+                              <option value="Artemether/Lumefantrine">Artemether/Lumefantrine</option>
+                              <option value="Amoxicillin/Clavulanate">Amoxicillin/Clavulanate</option>
+                              <option value="Chloroquine Phosphate">Chloroquine Phosphate</option>
+                              <option value="Cyclosporine">Cyclosporine</option>
+                              <option value="Dapagliflozin">Dapagliflozin</option>
+                              <option value="Doxorubicin">Doxorubicin</option>
+                              <option value="Efavirenz">Efavirenz</option>
+                              <option value="Erythropoietin">Erythropoietin</option>
+                              <option value="Glibenclamide">Glibenclamide</option>
+                              <option value="Hydroxychloroquine">Hydroxychloroquine</option>
+                              <option value="Insulin Glargine">Insulin Glargine</option>
+                              <option value="Lamivudine">Lamivudine</option>
+                              <option value="Lopinavir/Ritonavir">Lopinavir/Ritonavir</option>
+                              <option value="Metformin">Metformin</option>
+                              <option value="Methotrexate">Methotrexate</option>
+                              <option value="Nevirapine">Nevirapine</option>
+                              <option value="Omeprazole">Omeprazole</option>
+                              <option value="Paclitaxel">Paclitaxel</option>
+                              <option value="Paracetamol">Paracetamol</option>
+                              <option value="Prednisolone">Prednisolone</option>
+                              <option value="Quinine Sulfate">Quinine Sulfate</option>
+                              <option value="Ranitidine">Ranitidine</option>
+                              <option value="Rifampicin">Rifampicin</option>
+                              <option value="Salbutamol">Salbutamol</option>
+                              <option value="Sulfadoxine/Pyrimethamine">Sulfadoxine/Pyrimethamine</option>
+                              <option value="Tenofovir">Tenofovir</option>
+                              <option value="Tramadol">Tramadol</option>
+                              <option value="Valaciclovir">Valaciclovir</option>
+                              <option value="Vincristine">Vincristine</option>
+                              <option value="Warfarin">Warfarin</option>
+                              <option value="Amlodipine">Amlodipine</option>
+                              <option value="Atorvastatin">Atorvastatin</option>
+                              <option value="Azithromycin">Azithromycin</option>
+                              <option value="Carbamazepine">Carbamazepine</option>
+                              <option value="Ciprofloxacin">Ciprofloxacin</option>
+                              <option value="Clopidogrel">Clopidogrel</option>
+                              <option value="Coartem">Coartem</option>
+                              <option value="Diclofenac">Diclofenac</option>
+                              <option value="Doxycycline">Doxycycline</option>
+                              <option value="Enalapril">Enalapril</option>
+                              <option value="Furosemide">Furosemide</option>
+                              <option value="Gabapentin">Gabapentin</option>
+                              <option value="Hydrochlorothiazide">Hydrochlorothiazide</option>
+                              <option value="Ibuprofen">Ibuprofen</option>
+                              <option value="Ivermectin">Ivermectin</option>
+                              <option value="Levofloxacin">Levofloxacin</option>
+                              <option value="Lisinopril">Lisinopril</option>
+                              <option value="Losartan">Losartan</option>
+                              <option value="Metronidazole">Metronidazole</option>
+                              <option value="Nifedipine">Nifedipine</option>
+                              <option value="Nystatin">Nystatin</option>
+                              <option value="Olmesartan">Olmesartan</option>
+                              <option value="Ondansetron">Ondansetron</option>
+                              <option value="Pantoprazole">Pantoprazole</option>
+                              <option value="Phenobarbital">Phenobarbital</option>
+                              <option value="Propranolol">Propranolol</option>
+                              <option value="Risperidone">Risperidone</option>
+                              <option value="Simvastatin">Simvastatin</option>
+                              <option value="Spironolactone">Spironolactone</option>
+                              <option value="Valproic Acid">Valproic Acid</option>
+                            </select>
+                          </div>
+                        <div class="field">
+                          <label for="quantity">Quantity</label>
+                          <input type="text" name="quantity" id="quantity">
+                        </div>
+                        
+                        <div class="field">
+                          <label for="email">Email</label>
+                          <input type="text" name="email" id="email">
+                        </div>
+                        <div class="field">
+                          <label for="address">Address</label>
+                          <input type="text" name="address" id="address">
+                        </div>
+                        <div class="field">
+                          <label for="age">Age</label>
+                          <input type="text" name="age" id="age">
+                        </div>
+                        <div class="field">
+                          <label for="national_id">National Id</label>
+                          <input type="text" name="national_id" id="national_id">
+                        </div>
+                        <div class="field">
+                          <label for="contact_info">Contact Info</label>
+                          <input type="text" name="contact_info" id="contact_info">
+                        </div>
+                        
+                      
+                        <input type="submit" id="button" value="Send " >
+                      </form>
+                      
+                      <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                      
+                      <script type="text/javascript">
+                        emailjs.init('lnWfzM858tSt1IGo7')
+                      </script>
+                    <div id="order-status" class="mt-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<STYLE>/* General Field Styles */
+    .field {
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    /* Label Styles */
+    .field label {
+        display: block;
+        font-size: 14px;
+        color: #1f64b4;
+        margin-bottom: 8px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    /* Input Styles */
+    .field input, .field select {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        color: #333;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+    }
+    
+    .field input:focus, .field select:focus {
+        border-color: #1f64b4;
+        box-shadow: 0 0 5px rgba(31, 100, 180, 0.5);
+        outline: none;
+    }
+    
+    /* Submit Button Styles */
+    input[type="submit"] {
+        display: inline-block;
+        padding: 10px 30px;
+        font-size: 16px;
+        background-color: #4460AA;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #36508A;
+        transform: translateY(-2px);
+    }
+    
+    input[type="submit"]:active {
+        background-color: #2b406b;
+        transform: translateY(0);
+    } </STYLE>
+<script>const btn = document.getElementById('button');
+
+    document.getElementById('form')
+     .addEventListener('submit', function(event) {
+       event.preventDefault();
+    
+       btn.value = 'Sending...';
+    
+       const serviceID = 'default_service';
+       const templateID = 'template_1dw2tbr';
+    
+       emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.value = 'Send Email';
+          alert('Sent!');
+        }, (err) => {
+          btn.value = 'Send Email';
+          alert(JSON.stringify(err));
+        });
+    });  </script>
+<!-- AI Symptom Checkers End -->
+
+<!-- CSS for animations -->
+<style>
+    .animated-form .form-group {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .animated-form .form-group:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    .animated-form .form-group:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    .animated-form .form-group:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    .animated-form .form-group:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .animated-form .form-group.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<!-- JavaScript to handle form submission and display order status -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const formGroups = document.querySelectorAll('.animated-form .form-group');
+        formGroups.forEach((group, index) => {
+            setTimeout(() => {
+                group.classList.add('show');
+            }, index * 100);
+        });
+    });
+
+    document.getElementById('medicine-order-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Get form data
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Send the form data using EmailJS
+        emailjs.sendForm('YOUR_SERVICE_ID', 'template_1dw2tbr', form)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                // Display order status
+                const orderStatus = document.getElementById('order-status');
+                orderStatus.innerHTML = `
+                    <h5>Order Details:</h5>
+                    <p>Medicine: ${formData.get('medicine')}</p>
+                    <p>Quantity: ${formData.get('quantity')}</p>
+                    <p>Customer Name: ${formData.get('customer-name')}</p>
+                    <p>Contact Information: ${formData.get('contact-info')}</p>
+                    <p class="text-success">Your order has been placed successfully. Our team will review and respond to your request soon.</p>
+                `;
+                form.reset();
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('An error occurred while placing your order. Please try again.');
+            });
+    });
+</script>
+<!-- Healthcare Facilities Start -->
+<div class="container-fluid service bg-light overflow-hidden py-5">
+  <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+          <h4 class="text-uppercase text-primary">Top Healthcare Facilities in Nigeria</h4>
+          <h1 class="display-3 text-capitalize mb-3"> Set Up an Appointment and Discuss Further </h1>
+      </div>
+      <div class="row gx-0 gy-4">
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+23411234567" class="h4 d-inline-block mb-3">Lagos University Teaching Hospital</a>
+                          <p class="mb-0">Call: +234 1 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348034567890" class="h4 d-inline-block mb-3">University College Hospital, Ibadan</a>
+                          <p class="mb-0">Call: +234 803 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347098765432" class="h4 d-inline-block mb-3">National Hospital, Abuja</a>
+                          <p class="mb-0">Call: +234 709 876 5432</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348023456789" class="h4 d-inline-block mb-3">Federal Medical Centre, Asaba</a>
+                          <p class="mb-0">Call: +234 802 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347012345678" class="h4 d-inline-block mb-3">Delta State University Teaching Hospital</a>
+                          <p class="mb-0">Call: +234 701 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348031234567" class="h4 d-inline-block mb-3">St. Nicholas Hospital, Lagos</a>
+                          <p class="mb-0">Call: +234 803 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348021234567" class="h4 d-inline-block mb-3">Reddington Hospital, Lagos</a>
+                          <p class="mb-0">Call: +234 802 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348032345678" class="h4 d-inline-block mb-3">Bridge Clinic, Lagos</a>
+                          <p class="mb-0">Call: +234 803 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347013456789" class="h4 d-inline-block mb-3">Eko Hospital, Lagos</a>
+                          <p class="mb-0">Call: +234 701 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348091234567" class="h4 d-inline-block mb-3">Nigerian Turkish Nizamiye Hospital, Abuja</a>
+                          <p class="mb-0">Call: +234 809 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348033456789" class="h4 d-inline-block mb-3">Cedarcrest Hospitals, Abuja</a>
+                          <p class="mb-0">Call: +234 803 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347014567890" class="h4 d-inline-block mb-3">Garki Hospital, Abuja</a>
+                          <p class="mb-0">Call: +234 701 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348024567890" class="h4 d-inline-block mb-3">Nizamiye Hospital, Abuja</a>
+                          <p class="mb-0">Call: +234 802 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348094567890" class="h4 d-inline-block mb-3">Federal Medical Centre, Abuja</a>
+                          <p class="mb-0">Call: +234 809 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348035678901" class="h4 d-inline-block mb-3">University of Nigeria Teaching Hospital, Enugu</a>
+                          <p class="mb-0">Call: +234 803 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348095678901" class="h4 d-inline-block mb-3">Parklane Specialist Hospital, Enugu</a>
+                          <p class="mb-0">Call: +234 809 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348025678901" class="h4 d-inline-block mb-3">Federal Medical Centre, Owerri</a>
+                          <p class="mb-0">Call: +234 802 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348036789012" class="h4 d-inline-block mb-3">Imo State University Teaching Hospital, Orlu</a>
+                          <p class="mb-0">Call: +234 803 678 9012</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348096789012" class="h4 d-inline-block mb-3">Lagos State University Teaching Hospital</a>
+                          <p class="mb-0">Call: +234 809 678 9012</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347023456789" class="h4 d-inline-block mb-3">Federal Medical Centre, Abeokuta</a>
+                          <p class="mb-0">Call: +234 702 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347095678901" class="h4 d-inline-block mb-3">Federal Medical Centre, Umuahia</a>
+                          <p class="mb-0">Call: +234 709 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348037890123" class="h4 d-inline-block mb-3">Federal Medical Centre, Gombe</a>
+                          <p class="mb-0">Call: +234 803 789 0123</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348027890123" class="h4 d-inline-block mb-3">Federal Medical Centre, Keffi</a>
+                          <p class="mb-0">Call: +234 802 789 0123</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348097890123" class="h4 d-inline-block mb-3">Federal Medical Centre, Yenagoa</a>
+                          <p class="mb-0">Call: +234 809 789 0123</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348038901234" class="h4 d-inline-block mb-3">Federal Medical Centre, Katsina</a>
+                          <p class="mb-0">Call: +234 803 890 1234</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348028901234" class="h4 d-inline-block mb-3">Federal Medical Centre, Birnin Kebbi</a>
+                          <p class="mb-0">Call: +234 802 890 1234</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348098901234" class="h4 d-inline-block mb-3">Federal Medical Centre, Lokoja</a>
+                          <p class="mb-0">Call: +234 809 890 1234</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Healthcare Facilities End -->
+
+
+<!-- Mental Health Support Lines Start -->
+<div class="container-fluid service bg-light overflow-hidden py-5">
+  <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+          <h4 class="text-uppercase text-primary">Mental Health Support Lines in Nigeria</h4>
+          <h1 class="display-3 text-capitalize mb-3"> Get the Help You Need </h1>
+      </div>
+      <div class="row gx-0 gy-4">
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2349031234567" class="h4 d-inline-block mb-3">Mentally Aware Nigeria Initiative (MANI)</a>
+                          <p class="mb-0">Call: +234 903 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348131234567" class="h4 d-inline-block mb-3">She Writes Woman</a>
+                          <p class="mb-0">Call: +234 813 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348031234567" class="h4 d-inline-block mb-3">Mental Health Foundation Nigeria</a>
+                          <p class="mb-0">Call: +234 803 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348091234567" class="h4 d-inline-block mb-3">Mental Health Support Initiative</a>
+                          <p class="mb-0">Call: +234 809 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348021234567" class="h4 d-inline-block mb-3">Mental Health Awareness Nigeria</a>
+                          <p class="mb-0">Call: +234 802 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347011234567" class="h4 d-inline-block mb-3">Psychological Services Center</a>
+                          <p class="mb-0">Call: +234 701 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2349032345678" class="h4 d-inline-block mb-3">Wellbeing Foundation Africa</a>
+                          <p class="mb-0">Call: +234 903 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348132345678" class="h4 d-inline-block mb-3">Mental Health Awareness Foundation</a>
+                          <p class="mb-0">Call: +234 813 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348032345678" class="h4 d-inline-block mb-3">Mind and Soul Foundation</a>
+                          <p class="mb-0">Call: +234 803 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348092345678" class="h4 d-inline-block mb-3">Hope and Wellness Foundation</a>
+                          <p class="mb-0">Call: +234 809 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348023456789" class="h4 d-inline-block mb-3">Mental Health Support Network</a>
+                          <p class="mb-0">Call: +234 802 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347012345678" class="h4 d-inline-block mb-3">Mental Health Initiative for Youths</a>
+                          <p class="mb-0">Call: +234 701 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2349033456789" class="h4 d-inline-block mb-3">Mental Health Advocacy Group</a>
+                          <p class="mb-0">Call: +234 903 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348133456789" class="h4 d-inline-block mb-3">Mental Wellness Foundation</a>
+                          <p class="mb-0">Call: +234 813 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348033456789" class="h4 d-inline-block mb-3">Mind and Body Mental Health</a>
+                          <p class="mb-0">Call: +234 803 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348093456789" class="h4 d-inline-block mb-3">Mental Health Care Network</a>
+                          <p class="mb-0">Call: +234 809 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348024567890" class="h4 d-inline-block mb-3">Healthy Minds Initiative</a>
+                          <p class="mb-0">Call: +234 802 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347014567890" class="h4 d-inline-block mb-3">Mindful Living Foundation</a>
+                          <p class="mb-0">Call: +234 701 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2349034567890" class="h4 d-inline-block mb-3">Mental Health and Wellness Foundation</a>
+                          <p class="mb-0">Call: +234 903 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348134567890" class="h4 d-inline-block mb-3">Mental Health and Support Network</a>
+                          <p class="mb-0">Call: +234 813 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348034567890" class="h4 d-inline-block mb-3">Mental Health Awareness and Support Foundation</a>
+                          <p class="mb-0">Call: +234 803 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Mental Health Support Lines End -->
+
+<!-- Addiction Support Lines Start -->
+<div class="container-fluid service bg-light overflow-hidden py-5">
+  <div class="container py-5">
+      <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+          <h4 class="text-uppercase text-primary">Addiction Support Lines in Nigeria</h4>
+          <h1 class="display-3 text-capitalize mb-3"> Get Help for Drug Addiction and Other Addictions </h1>
+      </div>
+      <div class="row gx-0 gy-4">
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348031234567" class="h4 d-inline-block mb-3">National Drug Law Enforcement Agency (NDLEA)</a>
+                          <p class="mb-0">Call: +234 803 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348091234567" class="h4 d-inline-block mb-3">Christ Against Drug Abuse Ministry (CADAM)</a>
+                          <p class="mb-0">Call: +234 809 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347011234567" class="h4 d-inline-block mb-3">Serenity Addiction Treatment Clinic</a>
+                          <p class="mb-0">Call: +234 701 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348021234567" class="h4 d-inline-block mb-3">House of Refuge Rehabilitation Center</a>
+                          <p class="mb-0">Call: +234 802 123 4567</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348032345678" class="h4 d-inline-block mb-3">Olive Prime Psychological Services</a>
+                          <p class="mb-0">Call: +234 803 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348092345678" class="h4 d-inline-block mb-3">Synapse Services (Addiction and Mental Health)</a>
+                          <p class="mb-0">Call: +234 809 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347012345678" class="h4 d-inline-block mb-3">Mental Health Foundation Nigeria</a>
+                          <p class="mb-0">Call: +234 701 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348022345678" class="h4 d-inline-block mb-3">Wellness Support Foundation</a>
+                          <p class="mb-0">Call: +234 802 234 5678</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348033456789" class="h4 d-inline-block mb-3">Addiction Recovery Support Group</a>
+                          <p class="mb-0">Call: +234 803 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348093456789" class="h4 d-inline-block mb-3">Mental Health Support Initiative</a>
+                          <p class="mb-0">Call: +234 809 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348023456789" class="h4 d-inline-block mb-3">Hope and Wellness Foundation</a>
+                          <p class="mb-0">Call: +234 802 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347013456789" class="h4 d-inline-block mb-3">Mental Health Awareness Network</a>
+                          <p class="mb-0">Call: +234 701 345 6789</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2349034567890" class="h4 d-inline-block mb-3">Mental Health and Addiction Support Group</a>
+                          <p class="mb-0">Call: +234 903 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348134567890" class="h4 d-inline-block mb-3">Addiction and Mental Health Foundation</a>
+                          <p class="mb-0">Call: +234 813 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348034567890" class="h4 d-inline-block mb-3">Addiction Awareness Foundation</a>
+                          <p class="mb-0">Call: +234 803 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348094567890" class="h4 d-inline-block mb-3">Addiction Recovery Network</a>
+                          <p class="mb-0">Call: +234 809 456 7890</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348025678901" class="h4 d-inline-block mb-3">Mental Health and Addiction Recovery Foundation</a>
+                          <p class="mb-0">Call: +234 802 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2347015678901" class="h4 d-inline-block mb-3">Mental Health and Wellness Network</a>
+                          <p class="mb-0">Call: +234 701 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2349035678901" class="h4 d-inline-block mb-3">Addiction and Mental Health Awareness Network</a>
+                          <p class="mb-0">Call: +234 903 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348135678901" class="h4 d-inline-block mb-3">Addiction and Mental Health Support Foundation</a>
+                          <p class="mb-0">Call: +234 813 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInRight" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348035678901" class="h4 d-inline-block mb-3">Addiction and Wellness Foundation</a>
+                          <p class="mb-0">Call: +234 803 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay="0.2s">
+              <div class="service-item rounded p-4 mb-4">
+                  <div class="d-flex">
+                      <div class="service-content">
+                          <a href="tel:+2348095678901" class="h4 d-inline-block mb-3">Mental Health and Addiction Recovery Network</a>
+                          <p class="mb-0">Call: +234 809 567 8901</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Addiction Support Lines End -->
+
+       
+
+        
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="input-group w-75 mx-auto d-flex">
+                    <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                    <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search End -->
+        
+
+       
+
+        
+<!-- Team Start -->
+<div class="container-fluid team pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-uppercase text-primary">Top Rated  Clinics</h4>
+            <h1 class="display-3 text-capitalize mb-3">Hospitals and Clinics </h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000001"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Abuja Clinics</h4>
+                            <p class="mb-0">Specialization: General Medicine, Surgery</p>
+                            <p class="mb-0">Contact: +234 800 000 0001</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000002"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Garki Hospital</h4>
+                            <p class="mb-0">Specialization: Cardiology, Obstetrics & Gynecology</p>
+                            <p class="mb-0">Contact: +234 800 000 0002</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000003"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">National Hospital Abuja</h4>
+                            <p class="mb-0">Specialization: Oncology, Pediatrics</p>
+                            <p class="mb-0">Contact: +234 800 000 0003</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000004"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Maitama District Hospital</h4>
+                            <p class="mb-0">Specialization: Emergency Services, Internal Medicine</p>
+                            <p class="mb-0">Contact: +234 800 000 0004</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+       <!-- Team Start -->
+<div class="container-fluid team pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+        
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000001"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Lagos University Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: General Medicine, Surgery, Pediatrics</p>
+                            <p class="mb-0">Contact: +234 800 000 0001</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000002"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Reddington Hospital</h4>
+                            <p class="mb-0">Specialization: Cardiology, Emergency Services</p>
+                            <p class="mb-0">Contact: +234 800 000 0002</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000003"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">St. Nicholas Hospital</h4>
+                            <p class="mb-0">Specialization: Nephrology, Surgery</p>
+                            <p class="mb-0">Contact: +234 800 000 0003</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000004"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Lagoon Hospital</h4>
+                            <p class="mb-0">Specialization: Orthopedics, Cardiology</p>
+                            <p class="mb-0">Contact: +234 800 000 0004</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+       <!-- Team Start -->
+<div class="container-fluid team pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+
+        </div>
+        <div class="row g-4">
+            <!-- Hospital in Enugu -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000005"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">University of Nigeria Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: General Medicine, Surgery, Pediatrics</p>
+                            <p class="mb-0">Contact: +234 800 000 0005</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hospital in Kano -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000006"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Aminu Kano Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: Cardiology, Emergency Services</p>
+                            <p class="mb-0">Contact: +234 800 000 0006</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hospital in Port Harcourt -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000007"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">University of Port Harcourt Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: Nephrology, Surgery</p>
+                            <p class="mb-0">Contact: +234 800 000 0007</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hospital in Ibadan -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000008"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">University College Hospital, Ibadan</h4>
+                            <p class="mb-0">Specialization: Orthopedics, Cardiology</p>
+                            <p class="mb-0">Contact: +234 800 000 0008</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+ <!-- Team Start -->
+<div class="container-fluid team pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+    
+        </div>
+        <div class="row g-4">
+            <!-- Hospital in Kaduna -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000009"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Barau Dikko Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: General Medicine, Surgery</p>
+                            <p class="mb-0">Contact: +234 800 000 0009</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hospital in Jos -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000010"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Jos University Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: Pediatrics, Cardiology</p>
+                            <p class="mb-0">Contact: +234 800 000 0010</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hospital in Benin City -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000011"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">University of Benin Teaching Hospital</h4>
+                            <p class="mb-0">Specialization: Oncology, Surgery</p>
+                            <p class="mb-0">Contact: +234 800 000 0011</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hospital in Owerri -->
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="team-item p-4">
+                    <div class="team-inner rounded">
+                        <div class="team-img">
+                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
+                            <div class="team-share">
+                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000012"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-light rounded-bottom text-center py-4">
+                            <h4 class="mb-3">Federal Medical Centre, Owerri</h4>
+                            <p class="mb-0">Specialization: Internal Medicine, Emergency Services</p>
+                            <p class="mb-0">Contact: +234 800 000 0012</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5 mb-5 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                            <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h3 class="text-white mb-4"><i class="fas fa-hand-diagram  text-primary me-3"></i>Better Health Nigeria </h3>
+                                <p class="mb-3">  We believe that technology can revolutionize healthcare delivery in Nigeria. Through our innovative platform, we are building a healthier future for all, one patient at a time.</p>
+                            </div>
+                            <div class="position-relative">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                          
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Business Hours</h4>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                <p class="text-white mb-0">09.00 am to 09.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 09.00 pm</p>
+                            </div>
+                            <div class="mb-3">
+                                <h6 class="text-muted mb-0">Saturday:</h6>
+                                <p class="text-white mb-0">10.00 am to 09.00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Abuja Nigeria </a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> Betterng@.com</a>
+                            <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> www.betterng.com</a>
+                            <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +2349076933894</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>  BetterHealthNG</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
