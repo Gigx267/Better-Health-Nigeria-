@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Better Health </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="As healthcare challenges persist in both rural and urban areas,
+         many people struggle to access timely and convenient medical services. In urban settings, 
+         high population density and busy lifestyles often lead people to neglect their health, delaying 
+         medical consultations and preventive care. This project proposes the development of a web-based hospital 
+         platform aimed at improving healthcare accessibility and convenience for people regardless of location. By 
+         offering virtual consultations, health monitoring, appointment scheduling, and secure health data management,
+          the platform enables users to manage their health efficiently from any device with internet access. 
+          The platform's design addresses the unique needs of both urban and rural users, reducing the need for 
+          physical visits, travel, and time away from work or family. Incorporating user feedback mechanisms, 
+          such as in-app surveys, real-time chat support, and data analytics, the platform will evolve continuously
+           to meet user needs, providing a seamless, patient-centered experience. Ultimately, this project aims to 
+           enhance patient engagement, improve health outcomes, and promote preventive care, making healthcare more 
+           accessible
+         and adaptable to the modern demands of busy lifestyles and underserved communities alike. ">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><i class="fas fa-hand-holding-drug me-3"></i>Better Health Ng </h1>
+                  
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="service.html" class="nav-item nav-link">Service</a>
+                        <a href="booking.html" class="nav-item nav-link">Appointments</a>
+                        <a href="blog.html" class="nav-item nav-link">Blog</a>
+                     
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <div class="d-none d-xl-flex me-3">
+                        <div class="d-flex flex-column pe-3 border-end border-primary">
+                           
+                        </div>
+                    </div>
+
+                    <a href="Aidoctor.html" class="btn btn-primary rounded-pill d-inline-flex flex-shrink-0 py-2 px-4"> AI Wellness Advisor </a>
+                </div>
+            </nav>
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Book Appointments</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item active text-primary">Appointments</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text btn border p-3"><i class="fa fa-search text-white"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Medical Booking System</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+          
+                <style>
+                    .button {
+                        display: inline-block;
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        color: white;
+                        background-color: #007BFF;
+                        border: none;
+                        border-radius: 5px;
+                        text-align: center;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+            
+                    .button:hover {
+                        background-color: #0056b3;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Hospitals in Abuja</h1>
+                <a href="https://www.google.com/maps/search/map+of+all+the+hospitals+in+abuja+nigeria/@9.0454148,7.4482922,13z?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="button">View Hospitals in Abuja</a>
+            </body>
+            </html>
+
+
+            
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medical Booking System</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Medical Booking System</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="to_name"> Name:</label>
+                    <input type="text" id="to_name" name="to_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="homeAddress">Home Address:</label>
+                    <textarea id="homeAddress" name="homeAddress" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="issue">What is wrong:</label>
+                    <textarea id="issue" name="issue" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="doctorType">Type of Doctor:</label>
+                    <select id="doctorType" name="doctorType" class="form-control" required>
+                        <option value="General Medicine">General Medicine</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Obstetrics & Gynecology">Obstetrics & Gynecology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Neurosurgery">Neurosurgery</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="symptoms">Symptoms:</label>
+                    <textarea id="symptoms" name="symptoms" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration of Symptoms:</label>
+                    <input type="text" id="duration" name="duration" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="medications">Current Medications:</label>
+                    <textarea id="medications" name="medications" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="allergies">Any Allergies:</label>
+                    <textarea id="allergies" name="allergies" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="medicalHistory">Past Medical History:</label>
+                    <textarea id="medicalHistory" name="medicalHistory" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="recentTravel">Recent Travel History:</label>
+                    <textarea id="recentTravel" name="recentTravel" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="familyMedicalHistory">Family Medical History:</label>
+                    <textarea id="familyMedicalHistory" name="familyMedicalHistory" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="physicalActivity">Physical Activity Level:</label>
+                    <textarea id="physicalActivity" name="physicalActivity" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dietaryHabits">Dietary Habits:</label>
+                    <textarea id="dietaryHabits" name="dietaryHabits" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="smoking">Smoking Status:</label>
+                    <textarea id="smoking" name="smoking" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="alcohol">Alcohol Consumption:</label>
+                    <textarea id="alcohol" name="alcohol" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="stress">Stress Levels:</label>
+                    <textarea id="stress" name="stress" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="sleepPattern">Sleep Pattern:</label>
+                    <textarea id="sleepPattern" name="sleepPattern" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="painLevel">Pain Level (1-10):</label>
+                    <input type="number" id="painLevel" name="painLevel" class="form-control" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="surgeryHistory">History of Surgeries:</label>
+                    <textarea id="surgeryHistory" name="surgeryHistory" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="vaccinations">Vaccination Status:</label>
+                    <textarea id="vaccinations" name="vaccinations" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="chronicConditions">Any Chronic Conditions:</label>
+                    <textarea id="chronicConditions" name="chronicConditions" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="mentalHealth">Mental Health History:</label>
+                    <textarea id="mentalHealth" name="mentalHealth" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Select Hospital:</label>
+                    <select id="hospital" name="hospital" class="form-control" required>
+                        <option value="Charitos BO Hospital">Charitos BO Hospital</option>
+                        <option value="El-Rapha Hospital & Diagnostic Centre">El-Rapha Hospital & Diagnostic Centre</option>
+                        <option value="Pearl Family Hospital & Special Needs Centre">Pearl Family Hospital & Special Needs Centre</option>
+                        <option value="Nizamye Hospital">Nizamye Hospital</option>
+                        <option value="Almana Medical Centre">Almana Medical Centre</option>
+                        <option value="Bio-Royal Hospital & Maternity Ltd.">Bio-Royal Hospital & Maternity Ltd.</option>
+                        <option value="Garki Hospital">Garki Hospital</option>
+                        <option value="Dara Medical Clinics">Dara Medical Clinics</option>
+                        <option value="Angelic Care Hospital & Maternity">Angelic Care Hospital & Maternity</option>
+                        <option value="Model Care Hospitals">Model Care Hospitals</option>
+                        <option value="Fereprod Medical Centre">Fereprod Medical Centre</option>
+                        <option value="Alliance Hospital">Alliance Hospital</option>
+                        <option value="Diamond Medical Centre Ltd.">Diamond Medical Centre Ltd.</option>
+                        <option value="Guinea Savannah Medical Centre">Guinea Savannah Medical Centre</option>
+                        <option value="Sami Wadata Clinics Ltd.">Sami Wadata Clinics Ltd.</option>
+                        <option value="St. Francois Medical Centre">St. Francois Medical Centre</option>
+                        <option value="Horizons Medical Centre">Horizons Medical Centre</option>
+                        <option value="Sauki Private Hospital">Sauki Private Hospital</option>
+                        <option value="Brookfield Centre for Lifestyle Medicine">Brookfield Centre for Lifestyle Medicine</option>
+                        <option value="The Limi Hospital">The Limi Hospital</option>
+                        <option value="DIFF Hospital">DIFF Hospital</option>
+                        <option value="Wellington Clinics">Wellington Clinics</option>
+                        <option value="Abuja Clinics Ltd.">Abuja Clinics Ltd.</option>
+                        <option value="Kelina Hospital">Kelina Hospital</option>
+                        <option value="Peace Care Clinic">Peace Care Clinic</option>
+                        <option value="Ultramed Hospital">Ultramed Hospital</option>
+                        <option value="Able Hand Hospital & Clinic">Able Hand Hospital & Clinic</option>
+                        <option value="Hi-Fi Hospital">Hi-Fi Hospital</option>
+                        <option value="Taprobane Medical Centre">Taprobane Medical Centre</option>
+                        <option value="Silver Fountain Medical Centre">Silver Fountain Medical Centre</option>
+                        <option value="Asher Hospital & Maternity">Asher Hospital & Maternity</option>
+                        <option value="Medilam Medical Centre">Medilam Medical Centre</option>
+                        <option value="Pison Hospital">Pison Hospital</option>
+                        <option value="Kings Care Hospital">Kings Care Hospital</option>
+                        <option value="Jean Louis Medical Centre">Jean Louis Medical Centre</option>
+                        <option value="Katameya First Call Hospital">Katameya First Call Hospital</option>
+                        <option value="Nisa Premier Hospital">Nisa Premier Hospital</option>
+                        <option value="Trust Charitos Hospital">Trust Charitos Hospital</option>
+                        <option value="Julius Berger Medical Services Ltd.">Julius Berger Medical Services Ltd.</option>
+                        <option value="D & F Heritage Hospital">D & F Heritage Hospital</option>
+                        <option value="Abuja Unity Hospital & Maternity">Abuja Unity Hospital & Maternity</option>
+                        <option value="Zankli Medical Centre">Zankli Medical Centre</option>
+                        <option value="Yalen Hospital & Nursing Home">Yalen Hospital & Nursing Home</option>
+                        <option value="Pan Raf Hospital Ltd.">Pan Raf Hospital Ltd.</option>
+                        <option value="Bismol Hospital & Maternity Ltd.">Bismol Hospital & Maternity Ltd.</option>
+                        <option value="Primus Super Specialty Hospital">Primus Super Specialty Hospital</option>
+                        <option value="Midland Clinic">Midland Clinic</option>
+                        <option value="First Hospital & Maternity Ltd.">First Hospital & Maternity Ltd.</option>
+                        <option value="St. Mary’s Catholic Hospital">St. Mary’s Catholic Hospital</option>
+                        <option value="Alfarma Prime Hospital Ltd.">Alfarma Prime Hospital Ltd.</option>
+                        <option value="Ministry of Defence Clinic">Ministry of Defence Clinic</option>
+                        <option value="Guards Brigade Medical Centre">Guards Brigade Medical Centre</option>
+                        <option value="4 Battalion MRS">4 Battalion MRS</option>
+                        <option value="Naval HQ Sick Bay">Naval HQ Sick Bay</option>
+                        <option value="HQ NAF Clinic">HQ NAF Clinic</option>
+                        <option value="NDC Medical Centre">NDC Medical Centre</option>
+                        <option value="DHQ Medical Centre">DHQ Medical Centre</option>
+                        <option value="Army HQ Clinic">Army HQ Clinic</option>
+                        <option value="Defence Intelligence Agency Clinic">Defence Intelligence Agency Clinic</option>
+                        <option value="108 NAF Hospital">108 NAF Hospital</option>
+                    </select>
+                </div>
+                <input type="submit" id="button" class="btn btn-primary" value="Book Appointment">
+            </form>
+            <div id="result" class="mt-4"></div>
+        </div>
+    
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            emailjs.init('lnWfzM858tSt1IGo7');
+        </script>
+        <script type="text/javascript">
+            document.getElementById('bookingForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const btn = document.getElementById('button');
+                btn.value = 'Sending...';
+    
+                const serviceID = 'default_service';
+                const templateID = 'template_1dw2tbr';
+    
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Book Appointment';
+                        alert('Appointment booked successfully!');
+                    }, (err) => {
+                        btn.value = 'Book Appointment';
+                        alert(JSON.stringify(err));
+                    });
+            });
+        </script>
+    </body>
+    </html>
+            
+            <!-- Footer Start -->
+            <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+                <div class="container py-5">
+                    <div class="row g-5 mb-5 align-items-center">
+                        <div class="col-lg-7">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Email address to Subscribe">
+                                <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="d-flex align-items-center justify-content-center justify-content-lg-end">
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                                <div class="footer-item">
+                                    <h3 class="text-white mb-4"><i class="fas fa-hand-diagram  text-primary me-3"></i>Better Health Nigeria </h3>
+                                    <p class="mb-3">  We believe that technology can revolutionize healthcare delivery in Nigeria. Through our innovative platform, we are building a healthier future for all, one patient at a time.</p>
+                                </div>
+                                <div class="position-relative">
+                                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                    <button type="button" class="btn btn-secondary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                              
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                                <h4 class="text-white mb-4">Business Hours</h4>
+                                <div class="mb-3">
+                                    <h6 class="text-muted mb-0">Mon - Friday:</h6>
+                                    <p class="text-white mb-0">09.00 am to 09.00 pm</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="text-muted mb-0">Saturday:</h6>
+                                    <p class="text-white mb-0">10.00 am to 09.00 pm</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h6 class="text-muted mb-0">Saturday:</h6>
+                                    <p class="text-white mb-0">10.00 am to 09.00 pm</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="footer-item d-flex flex-column">
+                                <h4 class="text-white mb-4">Contact Info</h4>
+                                <a href="#"><i class="fa fa-map-marker-alt me-2"></i> Abuja Nigeria </a>
+                                <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> Betterng@.com</a>
+                                <a href="mailto:info@example.com"><i class="fas fa-envelope me-2"></i> www.betterng.com</a>
+                                <a href="tel:+012 345 67890"><i class="fas fa-phone me-2"></i> +2349076933894</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        
+            <script src="script.js"></script>
+        </body>
+        </html>
+
+
+        <script> 
+const hospitals = [
+    {
+        name: "Lagoon Hospitals",
+        location: "Ikoyi, Lagos",
+        phone: "+234 1 279 5000",
+        specialties: ["Cardiology", "Oncology", "Neurosurgery", "Obstetrics & Gynecology"]
+    },
+    {
+        name: "St. Nicholas Hospital",
+        location: "Lagos Island, Lagos",
+        phone: "+234 1 263 8220",
+        specialties: ["General Medicine", "Pediatrics", "Obstetrics & Gynecology"]
+    },
+    {
+        name: "First Consultant Medical Centre (FCMC)",
+        location: "Lagos Island, Lagos",
+        phone: "+234 1 266 4321",
+        specialties: ["Cardiology", "Nephrology", "Oncology", "Neurosurgery"]
+    },
+    {
+        name: "Eko Hospital",
+        location: "Surulere, Lagos",
+        phone: "+234 1 790 1000",
+        specialties: ["General Medicine", "Pediatrics", "Obstetrics & Gynecology", "Orthopedics"]
+    },
+    {
+        name: "Hygeia Hospital",
+        location: "Lekki, Lagos",
+        phone: "+234 1 291 3900",
+        specialties: ["Cardiology", "Oncology", "Neurosurgery", "Obstetrics & Gynecology"]
+    },
+    // Add more hospitals as needed
+];
+
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const location = document.getElementById("location").value.toLowerCase();
+    const doctorType = document.getElementById("doctorType").value;
+
+    const matchedHospitals = hospitals.filter(hospital => 
+        hospital.location.toLowerCase().includes(location) 
+        && hospital.specialties.includes(doctorType)
+    );
+
+    const resultDiv = document.getElementById("result");
+    resultDiv.innerHTML = "";
+
+    if (matchedHospitals.length > 0) {
+        matchedHospitals.forEach(hospital => {
+            const hospitalInfo = `
+                <div class="hospital">
+                    <h3>${hospital.name}</h3>
+                    <p>Location: ${hospital.location}</p>
+                    <p>Phone: ${hospital.phone}</p>
+                    <p>Specialties: ${hospital.specialties.join(", ")}</p>
+                </div>
+            `;
+            resultDiv.innerHTML += hospitalInfo;
+        });
+    } else {
+        resultDiv.innerHTML = "<p> Check Your Email,<br>  You will be contacted soon </p>";
+    }
+});
+
+
+
+
+        </script>
+
+       
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>  BetterHealthNG</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
