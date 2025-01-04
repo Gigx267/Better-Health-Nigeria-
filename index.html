@@ -67,9 +67,10 @@
                         <a href="index.html" class="nav-item nav-link active">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="booking.html" class="nav-item nav-link">Appointments</a>
                        
                         <a href="blog.html" class="nav-item nav-link">Blog</a>
-                     
+                        <a href="map.html" class="nav-item nav-link">Map </a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-none d-xl-flex me-3">
@@ -101,8 +102,8 @@
                                          regardless of location or socioeconomic status,empowering individuals to take charge of their health
                                     </p>
                                     <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="https://gigx267.github.io/Better-Health-Nigeria-/Aidoctor.html "> AI Wellness </a>
-                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="https://gigx267.github.io/Better-Health-Nigeria-/service.html "> Book Appointment</a>
+                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#"> Digital Doctor </a>
+                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#"> Book Appointment</a>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +117,9 @@
                                     <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;"> Potentially reduce healthcare costs by minimizing travel and wait times, overcome geographical barriers and access care in remote areas
                                     </p>
                                     <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
-                                        
+                                        <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Digital Doctor </a>
+                                        <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#"> Book Appointment</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -314,6 +317,214 @@
 </div>
 <!-- Service End -->
 
+   
+        <div class="container">
+            <h2>Medical Booking System</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="to_name"> Name:</label>
+                    <input type="text" id="to_name" name="to_name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="homeAddress">Home Address:</label>
+                    <textarea id="homeAddress" name="homeAddress" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="issue">What is wrong:</label>
+                    <textarea id="issue" name="issue" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="doctorType">Type of Doctor:</label>
+                    <select id="doctorType" name="doctorType" class="form-control" required>
+                        <option value="General Medicine">General Medicine</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Obstetrics & Gynecology">Obstetrics & Gynecology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Neurosurgery">Neurosurgery</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="symptoms">Symptoms:</label>
+                    <textarea id="symptoms" name="symptoms" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration of Symptoms:</label>
+                    <input type="text" id="duration" name="duration" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="medications">Current Medications:</label>
+                    <textarea id="medications" name="medications" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="allergies">Any Allergies:</label>
+                    <textarea id="allergies" name="allergies" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="medicalHistory">Past Medical History:</label>
+                    <textarea id="medicalHistory" name="medicalHistory" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="recentTravel">Recent Travel History:</label>
+                    <textarea id="recentTravel" name="recentTravel" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="familyMedicalHistory">Family Medical History:</label>
+                    <textarea id="familyMedicalHistory" name="familyMedicalHistory" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="physicalActivity">Physical Activity Level:</label>
+                    <textarea id="physicalActivity" name="physicalActivity" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dietaryHabits">Dietary Habits:</label>
+                    <textarea id="dietaryHabits" name="dietaryHabits" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="smoking">Smoking Status:</label>
+                    <textarea id="smoking" name="smoking" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="alcohol">Alcohol Consumption:</label>
+                    <textarea id="alcohol" name="alcohol" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="stress">Stress Levels:</label>
+                    <textarea id="stress" name="stress" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="sleepPattern">Sleep Pattern:</label>
+                    <textarea id="sleepPattern" name="sleepPattern" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="painLevel">Pain Level (1-10):</label>
+                    <input type="number" id="painLevel" name="painLevel" class="form-control" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="surgeryHistory">History of Surgeries:</label>
+                    <textarea id="surgeryHistory" name="surgeryHistory" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="vaccinations">Vaccination Status:</label>
+                    <textarea id="vaccinations" name="vaccinations" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="chronicConditions">Any Chronic Conditions:</label>
+                    <textarea id="chronicConditions" name="chronicConditions" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="mentalHealth">Mental Health History:</label>
+                    <textarea id="mentalHealth" name="mentalHealth" class="form-control" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="hospital">Select Hospital:</label>
+                    <select id="hospital" name="hospital" class="form-control" required>
+                        <option value="Charitos BO Hospital">Charitos BO Hospital</option>
+                        <option value="El-Rapha Hospital & Diagnostic Centre">El-Rapha Hospital & Diagnostic Centre</option>
+                        <option value="Pearl Family Hospital & Special Needs Centre">Pearl Family Hospital & Special Needs Centre</option>
+                        <option value="Nizamye Hospital">Nizamye Hospital</option>
+                        <option value="Almana Medical Centre">Almana Medical Centre</option>
+                        <option value="Bio-Royal Hospital & Maternity Ltd.">Bio-Royal Hospital & Maternity Ltd.</option>
+                        <option value="Garki Hospital">Garki Hospital</option>
+                        <option value="Dara Medical Clinics">Dara Medical Clinics</option>
+                        <option value="Angelic Care Hospital & Maternity">Angelic Care Hospital & Maternity</option>
+                        <option value="Model Care Hospitals">Model Care Hospitals</option>
+                        <option value="Fereprod Medical Centre">Fereprod Medical Centre</option>
+                        <option value="Alliance Hospital">Alliance Hospital</option>
+                        <option value="Diamond Medical Centre Ltd.">Diamond Medical Centre Ltd.</option>
+                        <option value="Guinea Savannah Medical Centre">Guinea Savannah Medical Centre</option>
+                        <option value="Sami Wadata Clinics Ltd.">Sami Wadata Clinics Ltd.</option>
+                        <option value="St. Francois Medical Centre">St. Francois Medical Centre</option>
+                        <option value="Horizons Medical Centre">Horizons Medical Centre</option>
+                        <option value="Sauki Private Hospital">Sauki Private Hospital</option>
+                        <option value="Brookfield Centre for Lifestyle Medicine">Brookfield Centre for Lifestyle Medicine</option>
+                        <option value="The Limi Hospital">The Limi Hospital</option>
+                        <option value="DIFF Hospital">DIFF Hospital</option>
+                        <option value="Wellington Clinics">Wellington Clinics</option>
+                        <option value="Abuja Clinics Ltd.">Abuja Clinics Ltd.</option>
+                        <option value="Kelina Hospital">Kelina Hospital</option>
+                        <option value="Peace Care Clinic">Peace Care Clinic</option>
+                        <option value="Ultramed Hospital">Ultramed Hospital</option>
+                        <option value="Able Hand Hospital & Clinic">Able Hand Hospital & Clinic</option>
+                        <option value="Hi-Fi Hospital">Hi-Fi Hospital</option>
+                        <option value="Taprobane Medical Centre">Taprobane Medical Centre</option>
+                        <option value="Silver Fountain Medical Centre">Silver Fountain Medical Centre</option>
+                        <option value="Asher Hospital & Maternity">Asher Hospital & Maternity</option>
+                        <option value="Medilam Medical Centre">Medilam Medical Centre</option>
+                        <option value="Pison Hospital">Pison Hospital</option>
+                        <option value="Kings Care Hospital">Kings Care Hospital</option>
+                        <option value="Jean Louis Medical Centre">Jean Louis Medical Centre</option>
+                        <option value="Katameya First Call Hospital">Katameya First Call Hospital</option>
+                        <option value="Nisa Premier Hospital">Nisa Premier Hospital</option>
+                        <option value="Trust Charitos Hospital">Trust Charitos Hospital</option>
+                        <option value="Julius Berger Medical Services Ltd.">Julius Berger Medical Services Ltd.</option>
+                        <option value="D & F Heritage Hospital">D & F Heritage Hospital</option>
+                        <option value="Abuja Unity Hospital & Maternity">Abuja Unity Hospital & Maternity</option>
+                        <option value="Zankli Medical Centre">Zankli Medical Centre</option>
+                        <option value="Yalen Hospital & Nursing Home">Yalen Hospital & Nursing Home</option>
+                        <option value="Pan Raf Hospital Ltd.">Pan Raf Hospital Ltd.</option>
+                        <option value="Bismol Hospital & Maternity Ltd.">Bismol Hospital & Maternity Ltd.</option>
+                        <option value="Primus Super Specialty Hospital">Primus Super Specialty Hospital</option>
+                        <option value="Midland Clinic">Midland Clinic</option>
+                        <option value="First Hospital & Maternity Ltd.">First Hospital & Maternity Ltd.</option>
+                        <option value="St. Mary’s Catholic Hospital">St. Mary’s Catholic Hospital</option>
+                        <option value="Alfarma Prime Hospital Ltd.">Alfarma Prime Hospital Ltd.</option>
+                        <option value="Ministry of Defence Clinic">Ministry of Defence Clinic</option>
+                        <option value="Guards Brigade Medical Centre">Guards Brigade Medical Centre</option>
+                        <option value="4 Battalion MRS">4 Battalion MRS</option>
+                        <option value="Naval HQ Sick Bay">Naval HQ Sick Bay</option>
+                        <option value="HQ NAF Clinic">HQ NAF Clinic</option>
+                        <option value="NDC Medical Centre">NDC Medical Centre</option>
+                        <option value="DHQ Medical Centre">DHQ Medical Centre</option>
+                        <option value="Army HQ Clinic">Army HQ Clinic</option>
+                        <option value="Defence Intelligence Agency Clinic">Defence Intelligence Agency Clinic</option>
+                        <option value="108 NAF Hospital">108 NAF Hospital</option>
+                    </select>
+                </div>
+                <input type="submit" id="button" class="btn btn-primary" value="Book Appointment">
+            </form>
+            <div id="result" class="mt-4"></div>
+        </div>
+    
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            emailjs.init('lnWfzM858tSt1IGo7');
+        </script>
+        <script type="text/javascript">
+            document.getElementById('bookingForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const btn = document.getElementById('button');
+                btn.value = 'Sending...';
+    
+                const serviceID = 'default_service';
+                const templateID = 'template_1dw2tbr';
+    
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                        btn.value = 'Book Appointment';
+                        alert('Appointment booked successfully!');
+                    }, (err) => {
+                        btn.value = 'Book Appointment';
+                        alert(JSON.stringify(err));
+                    });
+            });
+        </script>
+    </body>
+    </html>
+            
 
 
 
@@ -1416,331 +1627,6 @@
        
 
         
-<!-- Team Start -->
-<div class="container-fluid team pb-5">
-    <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-            <h4 class="text-uppercase text-primary">Top Rated  Clinics</h4>
-            <h1 class="display-3 text-capitalize mb-3">Hospitals and Clinics </h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000001"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Abuja Clinics</h4>
-                            <p class="mb-0">Specialization: General Medicine, Surgery</p>
-                            <p class="mb-0">Contact: +234 800 000 0001</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000002"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Garki Hospital</h4>
-                            <p class="mb-0">Specialization: Cardiology, Obstetrics & Gynecology</p>
-                            <p class="mb-0">Contact: +234 800 000 0002</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000003"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">National Hospital Abuja</h4>
-                            <p class="mb-0">Specialization: Oncology, Pediatrics</p>
-                            <p class="mb-0">Contact: +234 800 000 0003</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000004"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Maitama District Hospital</h4>
-                            <p class="mb-0">Specialization: Emergency Services, Internal Medicine</p>
-                            <p class="mb-0">Contact: +234 800 000 0004</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
-       <!-- Team Start -->
-<div class="container-fluid team pb-5">
-    <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-        
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000001"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Lagos University Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: General Medicine, Surgery, Pediatrics</p>
-                            <p class="mb-0">Contact: +234 800 000 0001</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000002"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Reddington Hospital</h4>
-                            <p class="mb-0">Specialization: Cardiology, Emergency Services</p>
-                            <p class="mb-0">Contact: +234 800 000 0002</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000003"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">St. Nicholas Hospital</h4>
-                            <p class="mb-0">Specialization: Nephrology, Surgery</p>
-                            <p class="mb-0">Contact: +234 800 000 0003</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000004"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Lagoon Hospital</h4>
-                            <p class="mb-0">Specialization: Orthopedics, Cardiology</p>
-                            <p class="mb-0">Contact: +234 800 000 0004</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
-       <!-- Team Start -->
-<div class="container-fluid team pb-5">
-    <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-
-        </div>
-        <div class="row g-4">
-            <!-- Hospital in Enugu -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000005"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">University of Nigeria Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: General Medicine, Surgery, Pediatrics</p>
-                            <p class="mb-0">Contact: +234 800 000 0005</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hospital in Kano -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000006"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Aminu Kano Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: Cardiology, Emergency Services</p>
-                            <p class="mb-0">Contact: +234 800 000 0006</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hospital in Port Harcourt -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000007"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">University of Port Harcourt Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: Nephrology, Surgery</p>
-                            <p class="mb-0">Contact: +234 800 000 0007</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hospital in Ibadan -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000008"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">University College Hospital, Ibadan</h4>
-                            <p class="mb-0">Specialization: Orthopedics, Cardiology</p>
-                            <p class="mb-0">Contact: +234 800 000 0008</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
- <!-- Team Start -->
-<div class="container-fluid team pb-5">
-    <div class="container pb-5">
-        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
-    
-        </div>
-        <div class="row g-4">
-            <!-- Hospital in Kaduna -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000009"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Barau Dikko Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: General Medicine, Surgery</p>
-                            <p class="mb-0">Contact: +234 800 000 0009</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hospital in Jos -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000010"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Jos University Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: Pediatrics, Cardiology</p>
-                            <p class="mb-0">Contact: +234 800 000 0010</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hospital in Benin City -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000011"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">University of Benin Teaching Hospital</h4>
-                            <p class="mb-0">Specialization: Oncology, Surgery</p>
-                            <p class="mb-0">Contact: +234 800 000 0011</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Hospital in Owerri -->
-            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
-                <div class="team-item p-4">
-                    <div class="team-inner rounded">
-                        <div class="team-img">
-                            <img src="b (1).jpg" class="img-fluid rounded-top w-100" alt="Image">
-                            <div class="team-share">
-                                <a class="btn btn-secondary btn-md-square rounded-pill text-white mx-1" href="tel:+2348000000012"><i class="fas fa-phone-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="bg-light rounded-bottom text-center py-4">
-                            <h4 class="mb-3">Federal Medical Centre, Owerri</h4>
-                            <p class="mb-0">Specialization: Internal Medicine, Emergency Services</p>
-                            <p class="mb-0">Contact: +234 800 000 0012</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
